@@ -1,0 +1,30 @@
+ 24-05-07
+ [x] Update elements responsivity
+ [x] Update stiles for media
+
+ [ ] Update README.md
+ [x] Update Drawer
+ [ ] Update packages to latest version
+ [ ] Remove unused packages if existed
+ [ ] Create git page deployment
+ [ ] Move assets to public folder ?
+ [ ] Add fonts to thema
+ [x] Refactor components in same stily
+ [ ] Replace dummy informations with valid informations
+ [ ] Create page for each section
+ [ ] Add downloadable CV pdf
+ [ ] Add contact form
+ [ ] Add change language support
+ [x] Add hover hints everiwhere
+ [ ] Comment code where needed
+ [ ] Count visits
+ [ ] Icon and title in manifest.json
+ [ ] Remove paddding for media md and over
+ [ ] Fix test so it can be run
+ [ ] Shrink header and footer by scrollbar if not displayed
+ [ ] Use rem instead of px
+ [x] move "dark" and "light" to constant
+ [ ] Remove dummyData
+
+ // https://www.dalyabaron.com
+ // https://www.hostinger.com/tutorials/portfolio-website-examples#1_Tamara_Sredojevic
