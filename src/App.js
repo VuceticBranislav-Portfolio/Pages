@@ -11,6 +11,28 @@ import Header from "./components/pageElements/Header/Header";
 import ThemeProviderContainer from "./containers/ThemeProviderContainer";
 import rutes from "./settings/rutes";
 
+import {
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <FrontPage />,
+    children: [
+      {
+        path: "WorkInProgress",
+        element: <UnderConstructionPage />,
+      },{ 
+        path: "Dummy",
+        element: <DummyPage />,
+      }]
+  }
+]);
+
+//<RouterProvider router={router} />   
+
 function App() {
   return (
     <ThemeProviderContainer>
@@ -18,16 +40,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-       
-          <Routes>
-            <Route exact path="/" element={<FrontPage />} />
-            <Route
-              exact path="/WorkInProgress"
-              element={<UnderConstructionPage />}
-            />
-            <Route exact path="/Dummy" element={<DummyPage />} />
-          </Routes>
-       
+        <FrontPage />
       </Article>
       <Footer />
     </ThemeProviderContainer>
