@@ -18,16 +18,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <BrowserRouter>
+        
           <Routes>
-            <Route path={rutes.welcome} element={<FrontPage />} />
+            <Route path="/" element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
             <Route path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-        </BrowserRouter>
+     
       </Article>
       <Footer />
     </ThemeProviderContainer>
