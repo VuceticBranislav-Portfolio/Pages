@@ -1,9 +1,9 @@
 const rutes = {
   dummy: "/#Dummy",
-  dummyRoute: "Dummy",
+  dummyRoute: "/Dummy",
 
   workInProgress: "/#WorkInProgress",
-  workInProgressRoute: "WorkInProgress",
+  workInProgressRoute: "/WorkInProgress",
 
   welcome: "/",
   welcomeRoute: "",
