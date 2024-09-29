@@ -18,7 +18,7 @@ import {
 
 const router = createHashRouter([
   {
-    path: "/*",
+    path: "/",
     element: <FrontPage />,
     children: [
       {
@@ -30,7 +30,7 @@ const router = createHashRouter([
       }]
   }
 ]);
-
+//<RouterProvider router={router} />   
 function App() {
   return (
     <ThemeProviderContainer>
@@ -38,7 +38,18 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <RouterProvider router={router} />        
+
+      <HashRouter>
+      <Routes>
+            <Route path={rutes.welcomeRoute} element={<FrontPage />} />
+            <Route
+              path={rutes.workInProgressRoute}
+              element={<UnderConstructionPage />}
+            />
+            <Route path={rutes.dummyRoute} element={<DummyPage />} />
+          </Routes>
+          </HashRouter>
+
       </Article>
       <Footer />
     </ThemeProviderContainer>
