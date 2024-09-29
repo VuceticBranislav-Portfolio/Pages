@@ -18,16 +18,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+       
           <Routes>
-            <Route path={rutes.welcome} element={<FrontPage />} />
+            <Route exact path={rutes.welcomeRoute} element={<FrontPage />} />
             <Route
-              path={rutes.workInProgress}
+              exact path={rutes.workInProgressRoute}
               element={<UnderConstructionPage />}
             />
-            <Route path={rutes.dummy} element={<DummyPage />} />
+            <Route exact path={rutes.dummyRoute} element={<DummyPage />} />
           </Routes>
-        </BrowserRouter>
+       
       </Article>
       <Footer />
     </ThemeProviderContainer>
