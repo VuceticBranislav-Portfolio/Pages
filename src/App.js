@@ -22,10 +22,10 @@ function App() {
           <Routes>
             <Route path="/" element={<FrontPage />} />
             <Route
-              path={rutes.workInProgress}
+              path="/WorkInProgress"
               element={<UnderConstructionPage />}
             />
-            <Route path={rutes.dummy} element={<DummyPage />} />
+            <Route path="/Dummy" element={<DummyPage />} />
           </Routes>
      
       </Article>
