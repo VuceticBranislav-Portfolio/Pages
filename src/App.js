@@ -31,8 +31,6 @@ const router = createHashRouter([
   }
 ]);
 
-//<RouterProvider router={router} />   
-
 function App() {
   return (
     <ThemeProviderContainer>
@@ -40,7 +38,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <FrontPage />
+        <RouterProvider router={router} />        
       </Article>
       <Footer />
     </ThemeProviderContainer>
