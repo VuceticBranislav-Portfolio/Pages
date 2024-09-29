@@ -6,7 +6,7 @@ const rutes = {
   workInProgressRoute: "/WorkInProgress",
 
   welcome: "/",
-  welcomeRoute: "",
+  welcomeRoute: "/",
 
   welcomeExpiriance: "/#Expiriance",
   welcomeBiography: "/#Biography",
