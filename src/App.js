@@ -18,16 +18,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        
+        <BrowserRouter basename='https://VuceticBranislav-Portfolio.github.io/Pages'>
           <Routes>
-            <Route path="/" element={<FrontPage />} />
+            <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
-              path="/WorkInProgress"
+              path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
-            <Route path="/Dummy" element={<DummyPage />} />
+            <Route path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-     
+        </BrowserRouter>
       </Article>
       <Footer />
     </ThemeProviderContainer>
