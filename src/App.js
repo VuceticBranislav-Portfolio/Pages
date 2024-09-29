@@ -20,12 +20,12 @@ function App() {
       <Article>
        
           <Routes>
-            <Route exact path={rutes.welcomeRoute} element={<FrontPage />} />
+            <Route exact path="/" element={<FrontPage />} />
             <Route
-              exact path={rutes.workInProgressRoute}
+              exact path="/WorkInProgress"
               element={<UnderConstructionPage />}
             />
-            <Route exact path={rutes.dummyRoute} element={<DummyPage />} />
+            <Route exact path="/Dummy" element={<DummyPage />} />
           </Routes>
        
       </Article>
