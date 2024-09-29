@@ -20,7 +20,7 @@ function App() {
       <Article>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<FrontPage />} />
+            <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
               element={<UnderConstructionPage />}
