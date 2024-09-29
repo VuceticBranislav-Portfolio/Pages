@@ -1,6 +1,6 @@
 const rutes = {
-  dummy: "/Dummy",
-  workInProgress: "/WorkInProgress",
+  dummy: "Dummy",
+  workInProgress: "WorkInProgress",
   welcome: "/",
   welcomeExpiriance: "/#Expiriance",
   welcomeBiography: "/#Biography",

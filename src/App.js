@@ -1,6 +1,6 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import FrontPage from "./pages/FrontPage";
 import DummyPage from "./pages/DummyPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage";
@@ -18,7 +18,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <BrowserRouter basename='https://VuceticBranislav-Portfolio.github.io/Pages'>
+        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
           <Routes>
             <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
