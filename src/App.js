@@ -18,7 +18,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <HashRouter>
+        <HashRouter basename="/Pages">
           <Routes>
             <Route path="/" element={<FrontPage />} />
             <Route
