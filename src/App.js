@@ -18,7 +18,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        
+        <HashRouter>
           <Routes>
             <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
@@ -28,7 +28,7 @@ function App() {
             <Route path={rutes.dummy} element={<DummyPage />} />
             <Route path="*" element={<DummyPage />} />
           </Routes>
-        
+        </HashRouter>
       </Article>
       <Footer />
     </ThemeProviderContainer>
