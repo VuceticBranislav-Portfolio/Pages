@@ -30,6 +30,7 @@ const router = createHashRouter([
   },
 ]);
 //<RouterProvider router={router} />
+
 function App() {
   return (
     <ThemeProviderContainer>
@@ -37,16 +38,18 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <HashRouter>
+         {/* <BrowserRouter>
           <Routes>
-            <Route path={rutes.welcome} element={<FrontPage />} />
+            <Route exact path={rutes.welcome} element={<FrontPage />} />
             <Route
-              path={rutes.workInProgress}
+              exact path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
-            <Route path={rutes.dummy} element={<DummyPage />} />
+            <Route exact path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>  */}
+        <RouterProvider  router={router} /> 
+        
       </Article>
       <Footer />
     </ThemeProviderContainer>
