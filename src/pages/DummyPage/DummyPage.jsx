@@ -11,7 +11,7 @@ const DummyPage = () => {
 
   return (
     <PageFrame sx={{ justifyContent: "center", alignItems: "center" }}>
-      <Typography>Dummy</Typography>
+      <Typography>Under Construction</Typography>
       <Button
         size="small"
         variant="contained"

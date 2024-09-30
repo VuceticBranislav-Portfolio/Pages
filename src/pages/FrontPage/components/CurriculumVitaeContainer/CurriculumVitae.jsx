@@ -25,7 +25,7 @@ const CurriculumVitae = (props) => {
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
-            href={settings.Path.CVMechanicalEngineer}            
+            href={settings.Path.CVMechanicalEngineer}
           >
             <Stack direction="column">
               <Box sx={styleCurriculumVitaeButtonBox}>

@@ -1,6 +1,6 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FrontPage from "./pages/FrontPage";
 import DummyPage from "./pages/DummyPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage";
@@ -11,26 +11,6 @@ import Header from "./components/pageElements/Header/Header";
 import ThemeProviderContainer from "./containers/ThemeProviderContainer";
 import rutes from "./settings/rutes";
 
-import { createHashRouter, RouterProvider } from "react-router-dom";
-
-const router = createHashRouter([
-  {
-    path: rutes.welcomeRoute,
-    element: <FrontPage />,
-    children: [
-      {
-        path: rutes.workInProgressRoute,
-        element: <UnderConstructionPage />,
-      },
-      {
-        path: rutes.dummyRoute,
-        element: <DummyPage />,
-      },
-    ],
-  },
-]);
-//<RouterProvider router={router} />
-
 function App() {
   return (
     <ThemeProviderContainer>
@@ -38,18 +18,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-         {/* <BrowserRouter>
+        <BrowserRouter>
           <Routes>
-            <Route exact path={rutes.welcome} element={<FrontPage />} />
+            <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
-              exact path={rutes.workInProgress}
+              path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
-            <Route exact path={rutes.dummy} element={<DummyPage />} />
+            <Route path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-        </BrowserRouter>  */}
-        <RouterProvider  router={router} /> 
-        
+        </BrowserRouter>
       </Article>
       <Footer />
     </ThemeProviderContainer>
