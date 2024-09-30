@@ -20,7 +20,7 @@ function App() {
       <Article>
         <HashRouter>
           <Routes>
-            <Route path={rutes.welcome} element={<FrontPage />} />
+            <Route path="/" element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
               element={<UnderConstructionPage />}
