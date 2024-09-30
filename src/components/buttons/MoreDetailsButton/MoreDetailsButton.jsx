@@ -4,6 +4,7 @@ import Tooltip from "@mui/material/Tooltip";
 import rutes from "../../../settings/rutes";
 import { useTheme } from "@mui/material/styles";
 import styles from "./MoreDetailsButton.styles";
+import { Link } from "react-router-dom";
 
 const MoreDetailsButton = (props) => {
   const theme = useTheme();
@@ -12,12 +13,16 @@ const MoreDetailsButton = (props) => {
 
   return (
     <Tooltip title="More info">
-      <IconButton
-        sx={[moreDetailsButton, ...(Array.isArray(pStyle) ? pStyle : [pStyle])]}
-        href={rutes.workInProgress}
-      >
-        <ReadMore />
-      </IconButton>
+      <Link to={rutes.workInProgress} sx={[
+            moreDetailsButton,
+            ...(Array.isArray(pStyle) ? pStyle : [pStyle]),
+          ]}>
+        <IconButton
+          
+        >
+          <ReadMore />
+        </IconButton>
+      </Link>
     </Tooltip>
   );
 };
