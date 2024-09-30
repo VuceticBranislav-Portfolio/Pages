@@ -11,26 +11,25 @@ import Header from "./components/pageElements/Header/Header";
 import ThemeProviderContainer from "./containers/ThemeProviderContainer";
 import rutes from "./settings/rutes";
 
-import {
-  createHashRouter,
-  RouterProvider
-} from 'react-router-dom';
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: rutes.welcomeRoute,
     element: <FrontPage />,
     children: [
       {
-        path: "/WorkInProgress",
+        path: rutes.workInProgressRoute,
         element: <UnderConstructionPage />,
-      },{ 
-        path: "/Dummy",
+      },
+      {
+        path: rutes.dummyRoute,
         element: <DummyPage />,
-      }]
-  }
+      },
+    ],
+  },
 ]);
-//<RouterProvider router={router} />   
+//<RouterProvider router={router} />
 function App() {
   return (
     <ThemeProviderContainer>
@@ -38,18 +37,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-
-      <HashRouter>
-      <Routes>
-            <Route path={rutes.welcomeRoute} element={<FrontPage />} />
+        <HashRouter>
+          <Routes>
+            <Route path={rutes.welcome} element={<FrontPage />} />
             <Route
-              path={rutes.workInProgressRoute}
+              path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
-            <Route path={rutes.dummyRoute} element={<DummyPage />} />
+            <Route path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-          </HashRouter>
-
+        </HashRouter>
       </Article>
       <Footer />
     </ThemeProviderContainer>
