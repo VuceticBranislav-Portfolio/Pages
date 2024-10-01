@@ -13,7 +13,7 @@ const MoreDetailsButton = (props) => {
 
   return (
     <Tooltip title="More info">
-      <Link to={rutes.workInProgress} sx={[
+      <Link to={rutes.dummy} sx={[
             moreDetailsButton,
             ...(Array.isArray(pStyle) ? pStyle : [pStyle]),
           ]}>
