@@ -18,8 +18,8 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <HashRouter >
-          <Routes>
+        <HashRouter basename="/Pages">
+          <Routes >
             <Route exact path="/*" element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
