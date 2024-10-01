@@ -1,6 +1,6 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import FrontPage from "./pages/FrontPage";
 import DummyPage from "./pages/DummyPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage";
@@ -19,14 +19,13 @@ function App() {
       <Header />
       <Article>
         <HashRouter>
-          <Routes >
+          <Routes>
             <Route exact path={rutes.welcome} element={<FrontPage />} />
             <Route
-              path={rutes.workInProgress}
+              exact path={rutes.workInProgress}
               element={<UnderConstructionPage />}
             />
-            <Route path={rutes.dummy} element={<DummyPage />} />
-            <Route path="*" element={<DummyPage />} />
+            <Route exact path={rutes.dummy} element={<DummyPage />} />
           </Routes>
         </HashRouter>
       </Article>

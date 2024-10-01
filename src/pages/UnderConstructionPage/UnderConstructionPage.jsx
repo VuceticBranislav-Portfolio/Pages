@@ -1,5 +1,5 @@
-import Button from "@mui/material/Button";
 import { Link as RouterLink } from 'react-router-dom';
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import styles from "./UnderConstructionPage.styles";
@@ -15,10 +15,10 @@ const UnderConstructionPage = () => {
       <Typography>Under Construction</Typography>
 
       <Button
-        size="small"
-        variant="contained"
         component={RouterLink}
         to={rutes.welcome}
+        size="small"
+        variant="contained"        
         sx={styleUnderConstructionPage}
       >
         Go back
