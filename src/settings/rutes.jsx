@@ -1,7 +1,7 @@
 const rutes = {
   dummy: "/Dummy",
   workInProgress: "/WorkInProgress",
-  welcome: "/",
+  welcome: "/*",
   welcomeExpiriance: "/#Expiriance",
   welcomeBiography: "/#Biography",
   welcomeEducation: "/#Education",

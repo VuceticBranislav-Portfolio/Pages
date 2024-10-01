@@ -1,4 +1,4 @@
-import Link from "@mui/material/Link";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import styles from "./UnderConstructionPage.styles";
@@ -12,14 +12,14 @@ const UnderConstructionPage = () => {
   return (
     <PageFrame sx={{ justifyContent: "center", alignItems: "center" }}>
       <Typography>Under Construction</Typography>
-      <Link to={rutes.workInProgress}
+      <Button
         size="small"
         variant="contained"
         href={rutes.welcome}
         sx={styleUnderConstructionPage}
       >
         Go back
-      </Link>
+      </Button>
     </PageFrame>
   );
 };
