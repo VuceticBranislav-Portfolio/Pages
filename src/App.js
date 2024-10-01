@@ -18,7 +18,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <BrowserRouter basename={ '/${process.env.PUBLIC_URL}'}>
+        <BrowserRouter basename={ '/Pages'}>
           <Routes >
             <Route exact path="/" element={<FrontPage />} />
             <Route
