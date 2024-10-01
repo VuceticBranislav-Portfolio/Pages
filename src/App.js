@@ -18,9 +18,9 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <HashRouter>
+        <HashRouter >
           <Routes>
-            <Route path="/*" element={<FrontPage />} />
+            <Route exact path="/*" element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
               element={<UnderConstructionPage />}
