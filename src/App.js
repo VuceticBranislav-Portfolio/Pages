@@ -18,9 +18,9 @@ function App() {
       <GlobalStyles />
       <Header />
       <Article>
-        <HashRouter basename="/Pages">
+        <BrowserRouter basename={ '/${process.env.PUBLIC_URL}'}>
           <Routes >
-            <Route exact path="/*" element={<FrontPage />} />
+            <Route exact path="/" element={<FrontPage />} />
             <Route
               path={rutes.workInProgress}
               element={<UnderConstructionPage />}
@@ -28,7 +28,7 @@ function App() {
             <Route path={rutes.dummy} element={<DummyPage />} />
             <Route path="*" element={<DummyPage />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </Article>
       <Footer />
     </ThemeProviderContainer>
