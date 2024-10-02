@@ -25,7 +25,6 @@ const CurriculumVitae = (props) => {
           <Button
             component={RouterLink}
             to={settings.Path.CVMechanicalEngineer}
-            href={`%PUBLIC_URL%/${settings.Path.CVMechanicalEngineer}`}
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
