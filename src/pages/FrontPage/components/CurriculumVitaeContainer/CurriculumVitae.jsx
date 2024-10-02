@@ -1,3 +1,4 @@
+import { Link as RouterLink } from 'react-router-dom';
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
@@ -22,10 +23,12 @@ const CurriculumVitae = (props) => {
       <Stack direction="row" spacing={2} sx={styleCurriculumVitae}>
         <Tooltip title={"Open mechanical engineer curriculum vitae file"}>
           <Button
+            component={RouterLink}
+            to={settings.Path.CVMechanicalEngineer}
+            href={`%PUBLIC_URL%/${settings.Path.CVMechanicalEngineer}`}
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
-            href={settings.Path.CVMechanicalEngineer}
           >
             <Stack direction="column">
               <Box sx={styleCurriculumVitaeButtonBox}>
@@ -41,10 +44,11 @@ const CurriculumVitae = (props) => {
 
         <Tooltip title={"Open software developer curriculum vitae file"}>
           <Button
+            component={RouterLink}
+            to={settings.Path.CVSoftwareDeveloper}
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
-            href={settings.Path.CVSoftwareDeveloper}
           >
             <Stack direction="column">
               <Box sx={styleCurriculumVitaeButtonBox}>
