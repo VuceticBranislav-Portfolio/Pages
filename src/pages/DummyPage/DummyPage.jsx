@@ -1,3 +1,4 @@
+import { Link as RouterLink } from 'react-router-dom';
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -13,9 +14,10 @@ const DummyPage = () => {
     <PageFrame sx={{ justifyContent: "center", alignItems: "center" }}>
       <Typography>Under Construction</Typography>
       <Button
+        component={RouterLink}
+        to={rutes.welcome}
         size="small"
         variant="contained"
-        href={rutes.welcome}
         sx={styleDummyPage}
       >
         Go back

@@ -10,12 +10,13 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
-import Link from "@mui/material/Link";
+
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import styles from "./DrawerMenu.styles";
 import rutes from "../../../settings/rutes";
+import { Link as RouterLink } from 'react-router-dom';
 
 const DrawerMenu = () => {
   const theme = useTheme();
@@ -32,7 +33,7 @@ const DrawerMenu = () => {
         {["Mechanical Engineer", "Software Developer", "Biography"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton component={Link} to={rutes.workInProgress}>
+              <ListItemButton component={RouterLink} to={rutes.workInProgress}>
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
@@ -46,7 +47,7 @@ const DrawerMenu = () => {
       <List>
         {["Education", "Contact"].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton component={Link} to={rutes.workInProgress}>
+            <ListItemButton component={RouterLink} to={rutes.workInProgress}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>

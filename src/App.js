@@ -14,11 +14,12 @@ import rutes from "./settings/rutes";
 function App() {
   return (
     <ThemeProviderContainer>
+      <HashRouter>
       <CssBaseline />
-      <GlobalStyles />
+      <GlobalStyles />      
       <Header />
       <Article>
-        <HashRouter>
+        
           <Routes>
             <Route exact path={rutes.welcome} element={<FrontPage />} />
             <Route
@@ -27,9 +28,10 @@ function App() {
             />
             <Route exact path={rutes.dummy} element={<DummyPage />} />
           </Routes>
-        </HashRouter>
+        
       </Article>
       <Footer />
+      </HashRouter>
     </ThemeProviderContainer>
   );
 }
