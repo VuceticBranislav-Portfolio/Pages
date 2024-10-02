@@ -23,8 +23,9 @@ const CurriculumVitae = (props) => {
       <Stack direction="row" spacing={2} sx={styleCurriculumVitae}>
         <Tooltip title={"Open mechanical engineer curriculum vitae file"}>
           <Button
-            component={RouterLink}
-            to={settings.Path.CVMechanicalEngineer}
+            //component={RouterLink}
+            //to={settings.Path.CVMechanicalEngineer}
+            href={settings.Path.CVMechanicalEngineer}
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
@@ -43,8 +44,9 @@ const CurriculumVitae = (props) => {
 
         <Tooltip title={"Open software developer curriculum vitae file"}>
           <Button
-            component={RouterLink}
-            to={settings.Path.CVSoftwareDeveloper}
+            //component={RouterLink}
+            //to={settings.Path.CVSoftwareDeveloper}
+            href={settings.Path.CVSoftwareDeveloper}
             variant="contained"
             size="small"
             sx={styleCurriculumVitaeButton}
