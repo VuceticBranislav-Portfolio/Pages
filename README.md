@@ -1,29 +1,28 @@
 <!-- Portfolio -->
 <div align="center">
+  <span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="../../">
     <img src="https://github.com/VuceticBranislav-Portfolio/Pages/blob/main/public/logo192.png" alt="Logo" width="196" height="196">
   </a>
+  </span>
   
   ### Portfolio
   <p align="center">
     Showcase my creative work, skills, qualifications, education, training...
   </p>
-
-</div>
-
-<div align="center">
   
-  [![portfolioPages][portfolioPages-shield]][portfolioPages-url] </br>
-  [![LinkedIn][linkedin-shield]][linkedin-url] 
+  [![portfolioPages][portfolioPages-shield]][portfolioPages-url]
 </div>
 
 <!-- Resume -->
 <div align="center">
   
-## Resume
+### Links
 
   [![resumeME][resumeME-shield]][resumeME-url] </br>
-  [![resumeSD][resumeSD-shield]][resumeSD-url]
+  [![resumeSD][resumeSD-shield]][resumeSD-url] </br> 
+  [![LinkedIn][linkedin-shield]][linkedin-url]
 </div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
