@@ -26,6 +26,8 @@
   [![resumeSD][resumeSD-shield]][resumeSD-url]
 </div>
 
+[![linkedin-shield]](https://vuceticbranislav-portfolio.github.io/Pages/CV-Vucetic-Branislav_SD.pdf)
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [portfolioPages-shield]: https://img.shields.io/badge/Portfolio%20Pages-Portfolio?style=flat&logo=Read.cv&logoColor=Black&color=5BF
 [portfolioPages-url]:    https://vuceticbranislav-portfolio.github.io/Pages/#/
