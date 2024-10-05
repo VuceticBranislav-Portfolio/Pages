@@ -23,7 +23,7 @@
 ## Resume
 
   [![resumeME][resumeME-shield]][resumeME-url] </br>
-  [![resumeSD][resumeSD-shield]][resumeSD-url]
+  [![resumeSD][resumeSD-shield]](https://vuceticbranislav-portfolio.github.io/Pages/CV-Vucetic-Branislav_SD.pdf)
 </div>
 
 [![linkedin-shield]](https://vuceticbranislav-portfolio.github.io/Pages/CV-Vucetic-Branislav_SD.pdf)
