@@ -1,11 +1,7 @@
 <!-- Portfolio -->
 <div align="center">
-  <span>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="../../">
-    <img src="https://github.com/VuceticBranislav-Portfolio/Pages/blob/main/public/logo192.png" alt="Logo" width="196" height="196">
-  </a>
-  </span>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![pages][pages-img]][pages-url]
   
   ### Portfolio
   <p align="center">
@@ -18,7 +14,7 @@
 <!-- Resume -->
 <div align="center">
   
-### Links
+  ### Links
 
   [![resumeME][resumeME-shield]][resumeME-url] </br>
   [![resumeSD][resumeSD-shield]][resumeSD-url] </br> 
@@ -26,6 +22,8 @@
 </div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[pages-img]:             https://github.com/VuceticBranislav-Portfolio/Pages/blob/main/public/logo192.png
+[pages-url]:             https://vuceticbranislav-portfolio.github.io/Pages/#/
 [portfolioPages-shield]: https://img.shields.io/badge/Portfolio%20Pages-Portfolio?style=flat&logo=Read.cv&logoColor=Black&color=5BF
 [portfolioPages-url]:    https://vuceticbranislav-portfolio.github.io/Pages/#/
 [resumeME-shield]:       https://img.shields.io/badge/Mechanical%20Engineer%20Resume-Resume?style=flat&logo=Read.cv&logoColor=Black&color=555
