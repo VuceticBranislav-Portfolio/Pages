@@ -11,8 +11,7 @@ function ContactLink(props) {
     pDescription,
     pLink,
     pText,
-    sx: pStyle = [],
-    ...rest
+    sx: pStyle = []
   } = props;
 
   const theme = useTheme();
