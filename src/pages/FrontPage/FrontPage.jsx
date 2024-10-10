@@ -2,14 +2,14 @@ import PageFrame from "../../containers/PageFrame";
 import WelcomeContainer from "./components/WelcomeContainer";
 import text from "../../data/text";
 import ContactContainer from "./components/ContactContainer";
-import CurriculumVitaeContainer from "./components/CurriculumVitaeContainer";
+import ResumeContainer from "./components/ResumeContainer";
 import SectionContainer from "./components/SectionContainer";
 
 const FrontPage = () => {
   return (
     <PageFrame>
       <WelcomeContainer pSectionName="Welcome" />
-      <CurriculumVitaeContainer pSectionName="CurriculumVitae" />
+      <ResumeContainer pSectionName="Resume" />
       <SectionContainer
         pSectionName="Expiriance"
         pHeader={text.mainPage.expirianceHeader}

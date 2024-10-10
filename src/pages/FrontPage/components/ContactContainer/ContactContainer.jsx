@@ -7,7 +7,6 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import styles from "./ContactContainer.styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import ContactLink from "../../../../components/navigations/ContactLink";
 import MoreDetailsButton from "../../../../components/buttons/MoreDetailsButton";
 
@@ -20,7 +19,6 @@ const ContactContainer = (props) => {
     styleContactContainerHeader,
     styleContactContainerStack,
   } = styles(theme);
-  const tight = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
     <section id={pSectionName}>

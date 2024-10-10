@@ -1,5 +1,5 @@
 const styles = (theme) => ({
-  styleCurriculumVitae: {
+  styleResume: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
@@ -15,11 +15,11 @@ const styles = (theme) => ({
       bgcolor: theme.palette.frontPage.cardHighlight,
     },
   },
-  styleCurriculumVitaeButton: {
+  styleResumeButton: {
     textTransform: "none",
     paddingBottom: "0px",
   },
-  styleCurriculumVitaeButtonBox: {
+  styleResumeButtonBox: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -27,12 +27,12 @@ const styles = (theme) => ({
     flexWrap: "nowrap",
     color: theme.palette.text.primary,
   },
-  styleCurriculumVitaeTextHeader: {
+  styleResumeTextHeader: {
     color: theme.palette.text.primary,
     marginLeft: "2px",
     justifySelf: "center",
   },
-  styleCurriculumVitaeText: {
+  styleResumeText: {
     color: theme.palette.text.primary,
     justifySelf: "center",
     lineHeight: "1.1",

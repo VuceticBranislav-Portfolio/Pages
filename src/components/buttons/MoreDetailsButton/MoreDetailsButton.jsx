@@ -1,4 +1,4 @@
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import ReadMore from "@mui/icons-material/ReadMore";
 import Tooltip from "@mui/material/Tooltip";
@@ -9,7 +9,7 @@ import styles from "./MoreDetailsButton.styles";
 const MoreDetailsButton = (props) => {
   const theme = useTheme();
   const { moreDetailsButton } = styles(theme);
-  const { link, sx: pStyle = [], ...rest } = props;
+  const { sx: pStyle = [] } = props;
 
   return (
     <Tooltip title="More info">

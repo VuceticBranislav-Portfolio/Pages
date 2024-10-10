@@ -1,41 +1,38 @@
-import { Link as RouterLink } from 'react-router-dom';
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
-import styles from "./CurriculumVitae.styles";
+import styles from "./Resume.styles";
 import { Button, Tooltip, Typography } from "@mui/material";
 import settings from "../../../../settings/settings";
 
-const CurriculumVitae = (props) => {
+const Resume = (props) => {
   const { pSectionName } = props;
   const theme = useTheme();
   const {
-    styleCurriculumVitae,
-    styleCurriculumVitaeButton,
-    styleCurriculumVitaeButtonBox,
-    styleCurriculumVitaeText,
-    styleCurriculumVitaeTextHeader,
+    styleResume,
+    styleResumeButton,
+    styleResumeButtonBox,
+    styleResumeText,
+    styleResumeTextHeader,
   } = styles(theme);
 
   return (
     <section id={pSectionName}>
-      <Stack direction="row" spacing={2} sx={styleCurriculumVitae}>
+      <Stack direction="row" spacing={2} sx={styleResume}>
         <Tooltip title={"Open mechanical engineer curriculum vitae file"}>
           <Button
-            //component={RouterLink}
-            //to={settings.Path.CVMechanicalEngineer}
             href={settings.Path.CVMechanicalEngineer}
             variant="contained"
             size="small"
-            sx={styleCurriculumVitaeButton}
+            sx={styleResumeButton}
           >
             <Stack direction="column">
-              <Box sx={styleCurriculumVitaeButtonBox}>
+              <Box sx={styleResumeButtonBox}>
                 <AssignmentIndIcon />
-                <Typography sx={styleCurriculumVitaeTextHeader}>CV</Typography>
+                <Typography sx={styleResumeTextHeader}>CV</Typography>
               </Box>
-              <Typography variant="body6" sx={styleCurriculumVitaeText}>
+              <Typography variant="body6" sx={styleResumeText}>
                 Mechanical Engineer
               </Typography>
             </Stack>
@@ -44,19 +41,17 @@ const CurriculumVitae = (props) => {
 
         <Tooltip title={"Open software developer curriculum vitae file"}>
           <Button
-            //component={RouterLink}
-            //to={settings.Path.CVSoftwareDeveloper}
             href={settings.Path.CVSoftwareDeveloper}
             variant="contained"
             size="small"
-            sx={styleCurriculumVitaeButton}
+            sx={styleResumeButton}
           >
             <Stack direction="column">
-              <Box sx={styleCurriculumVitaeButtonBox}>
+              <Box sx={styleResumeButtonBox}>
                 <AssignmentIndIcon />
-                <Typography sx={styleCurriculumVitaeTextHeader}>CV</Typography>
+                <Typography sx={styleResumeTextHeader}>CV</Typography>
               </Box>
-              <Typography variant="body6" sx={styleCurriculumVitaeText}>
+              <Typography variant="body6" sx={styleResumeText}>
                 Software Developer
               </Typography>
             </Stack>
@@ -67,4 +62,4 @@ const CurriculumVitae = (props) => {
   );
 };
 
-export default CurriculumVitae;
+export default Resume;

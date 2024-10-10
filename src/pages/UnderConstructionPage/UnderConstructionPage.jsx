@@ -1,4 +1,4 @@
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -18,12 +18,11 @@ const UnderConstructionPage = () => {
         component={RouterLink}
         to={rutes.welcome}
         size="small"
-        variant="contained"        
+        variant="contained"
         sx={styleUnderConstructionPage}
       >
         Go back
       </Button>
-    
     </PageFrame>
   );
 };
